@@ -1,6 +1,6 @@
 # Developer Traits and a Fluent Builder
 
-**CSC505 — Module 4 Critical Thinking**
+CSC505 Module 4 Critical Thinking (CSC505_M04_CT)
 
 This project models three personality traits commonly found in high-performing
 developers, represents them in a UML class diagram structured after the Builder
@@ -49,14 +49,14 @@ product already created.
 
 ## UML Class Diagram
 
-![UML class diagram of the Client, DeveloperBuilder, and Developer classes](developer_builder.png)
+![UML class diagram](developer_builder.png)
 
 Class relationships:
 
-| Relationship | Type | Meaning |
-| --- | --- | --- |
-| `Client` → `DeveloperBuilder` | Dependency (`uses`) | `main()` configures the profile through the fluent interface |
-| `DeveloperBuilder` → `Developer` | Creation dependency (`<<create>>`) | `build()` constructs and returns the immutable product |
+- `Client` to `DeveloperBuilder`: a `uses` dependency. `main()` configures
+  the profile through the fluent interface.
+- `DeveloperBuilder` to `Developer`: a `<<create>>` dependency. `build()`
+  constructs and returns the immutable product.
 
 The diagram shows a creation dependency, not inheritance, between the builder
 and its product. The editable UMLet source is `developer_builder.uxf`.
@@ -87,15 +87,27 @@ Trait: Adaptability - Revises a design when new evidence justifies change.
 Total traits included: 3
 ```
 
+### Successful Execution
+
+![Successful script run in VS Code](python_output_screenshot.png)
+
 ## Project Files
 
 | File | Purpose |
 | --- | --- |
-| `developer_builder.py` | Python script with the `Developer` product and fluent `DeveloperBuilder` |
+| `developer_builder.py` | Python script: `Developer` and its builder |
 | `developer_builder.png` | UML class diagram export |
 | `developer_builder.uxf` | Editable UMLet diagram source |
-| `pyproject.toml` | uv project definition (standard library only, Python 3.10+) |
+| `python_output_screenshot.png` | Screenshot of a successful run |
+| `pyproject.toml` | uv project definition (stdlib only, 3.10+) |
 | `README.md` | This document |
+
+## Submission Contents
+
+The zipped submission folder contains the Python script
+(`developer_builder.py`), a screenshot of the script running successfully
+(`python_output_screenshot.png`), and the UML class diagram
+(`developer_builder.png`).
 
 ## References
 
