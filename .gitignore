@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# uv lockfile (no third-party dependencies in this project)
+uv.lock
+
+# Submission archives
+*.zip
+
+# Local working drafts (not part of the submission)
+assignment_draft.docx
+README.txt
+execution_output.txt
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>30</y>
+      <w>600</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Client
+main() configures the profile</panel_attributes>
+    <additional_attributes />
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>145</x>
+      <y>265</y>
+      <w>810</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>DeveloperBuilder
+--
+_traits: dict
+--
+with_curiosity(description): DeveloperBuilder
+with_empathy(description): DeveloperBuilder
+with_adaptability(description): DeveloperBuilder
+build(): Developer</panel_attributes>
+    <additional_attributes />
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>715</y>
+      <w>520</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Developer
+--
+curiosity: str
+empathy: str
+adaptability: str</panel_attributes>
+    <additional_attributes />
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>130</y>
+      <w>30</w>
+      <h>155</h>
+    </coordinates>
+    <panel_attributes>lt=..&gt;
+uses</panel_attributes>
+    <additional_attributes>10;10;10;135</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>545</y>
+      <w>30</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=..&gt;
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>10;10;10;170</additional_attributes>
+  </element>
+</diagram>

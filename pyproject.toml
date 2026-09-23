@@ -1,0 +1,6 @@
+[project]
+name = "csc505-critical-thinking-4"
+version = "0.1.0"
+description = "CSC505 Module 4 Critical Thinking - Builder pattern developer traits"
+requires-python = ">=3.10"
+dependencies = []
