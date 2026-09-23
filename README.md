@@ -12,7 +12,10 @@ a fluent builder.
 The three traits represented are **curiosity**, **empathy**, and
 **adaptability**. Each trait contributes to collaboration through observable
 behavior, and the Python example uses descriptions rather than scores or claims
-about a person's fixed ability.
+about a person's fixed ability. These selections align with interview research
+at Microsoft, where experienced engineers described great software engineers as
+continuously improving, mindful of teammates and customers, and willing to
+revise decisions as they evaluate tradeoffs (Li et al., 2015).
 
 ### Curiosity
 
@@ -37,8 +40,11 @@ explanation, rather than repeated changes without a clear purpose.
 
 ## Builder Design
 
-Object Oriented Design (n.d.) describes Builder as separating the construction
-process from the product representation. This compact example uses a fluent
+The Builder pattern separates the construction of a complex object from its
+representation so that the same construction process can create different
+representations (Gamma et al., 1995). Object Oriented Design (n.d.) likewise
+describes Builder as separating the construction process from the product
+representation. This compact example uses a fluent
 concrete builder: each `with_` method records one trait and returns the
 builder, and `build()` creates the `Developer` product. The client supplies the
 construction sequence instead of introducing a separate Director class.
@@ -111,5 +117,13 @@ The zipped submission folder contains the Python script
 
 ## References
 
-Object Oriented Design. (n.d.). *Builder pattern*.
-<https://www.oodesign.com/builder-pattern>
+Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1995). *Design patterns:
+Elements of reusable object-oriented software*. Addison-Wesley.
+
+Li, P. L., Ko, A. J., & Zhu, J. (2015). What makes a great software engineer?
+In *Proceedings of the 37th International Conference on Software Engineering*
+(pp. 700-710). IEEE Press.
+<https://dl.acm.org/doi/10.5555/2818754.2818839>
+
+Object Oriented Design. (n.d.). *Builder pattern*. Retrieved September 22,
+2026, from <https://www.oodesign.com/builder-pattern>
